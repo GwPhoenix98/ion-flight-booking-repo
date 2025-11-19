@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SwitchDestination {
     String finalDestinationName;
 
-     void controlDestiantion(String destinationName) {
+     void controlDestination(String destinationName) {
         Scanner obScanner = new Scanner(System.in);
         boolean valid = false;
 
@@ -37,9 +37,8 @@ public class SwitchDestination {
                     System.out.println("Unknown destination! Choose again!");
                     System.out.print("Paris, Roma, London, Barcelona: ");
                     destinationName = obScanner.next().toLowerCase();
-                    valid = false;
+
             }
         } while (!valid);
-
     }
 }

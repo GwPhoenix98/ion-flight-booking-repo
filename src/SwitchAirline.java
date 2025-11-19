@@ -37,9 +37,8 @@ public class SwitchAirline {
                     System.out.println("Unknown airline company! Choose again!");
                     System.out.print("WizzAir, RyanAir, TurkishAirline, HiSky: ");
                     airlineName = obScanner.next().toLowerCase();
-                    valid = false;
+
             }
         } while (!valid);
-
     }
 }

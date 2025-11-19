@@ -1,19 +1,23 @@
 public class ShowFlightBooking {
-    public static void main(String[] args) {
+     void printBooking(String name,
+                      String destination,
+                      String airline,
+                      boolean hasLuggage,
+                      String seatClass) {
 
-        FlightBooking showBooking = new FlightBooking();
+         FlightBooking settingBooking = new FlightBooking();
 
-        showBooking.setPassengerName("Ion");
-        showBooking.setDestination("London");
-        showBooking.setAirline("WizzAir");
-        showBooking.setSeatClass("Business");
-        showBooking.setHasLuggage(true);
+        settingBooking.setPassengerName(name);
+        settingBooking.setDestination(destination);
+        settingBooking.setAirline(airline);
+        settingBooking.setSeatClass(seatClass);
+        settingBooking.setHasLuggage(hasLuggage);
 
-        System.out.println( "Name: "        + showBooking.getPassengerName() + "\n" +
-                            "Destination: " + showBooking.getDestination() + "\n" +
-                            "Airline: "     + showBooking.getAirline() + "\n" +
-                            "Class: "       + showBooking.getSeatClass() + "\n" +
-                            "Has Luggage: " + showBooking.isHasLuggage());
+        System.out.println( "Name: "        + settingBooking.getPassengerName() + "\n" +
+                            "Destination: " + settingBooking.getDestination() + "\n" +
+                            "Airline: "     + settingBooking.getAirline() + "\n" +
+                            "Class: "       + settingBooking.getSeatClass() + "\n" +
+                            "Has Luggage: " + settingBooking.isHasLuggage());
 
     }
 }
